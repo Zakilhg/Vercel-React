@@ -1,0 +1,83 @@
+:root {
+  --lightestColor: #ebecf0;
+  --lightColor: #c4c7d2;
+  --middleColor: #c4c7d2;
+  --darkColor: #0c0e1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  display: block;
+  background: none;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+  outline: none;
+  padding: 20px;
+  font-size: 20px;
+  border: 0.3px solid #fff;
+}
+
+button:active {
+  box-shadow: inset 0px 0px 60px 0px rgba(0, 0, 0, 0.1);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc {
+  width: 250px;
+  margin-top: 100px;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.result {
+  color: #fff;
+  text-align: end;
+  font-size: 60px;
+  padding: 16px;
+  width: 250px;
+  background-color: var(--darkColor);
+}
+
+.quarter {
+  flex: 0 0 25%;
+}
+
+.half {
+  flex: 0 0 50%;
+  border-left: none;
+}
+
+.lightestColor {
+  background-color: var(--lightestColor);
+}
+
+.lightColor {
+  background-color: var(--lightColor);
+}
+
+.middleColor {
+  background-color: var(--middleColor);
+  border-right: none;
+}
+
+.noBorder {
+  border-left: none;
+}
